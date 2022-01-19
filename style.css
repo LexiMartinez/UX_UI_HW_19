@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100%vh;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: lightblue;
+}
+
+.detail{
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+.detail h2{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: lightpink;
+}
+
+.detail p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detail a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.image{
+    width: 35%;
+    height: 65%;
+    position: absolute;
+    bottom: 0%;
+    right: 100px;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.rights {
+    font-weight: bold;
+  }
+  
+  .rights > span {
+    color: black;
+  }
+  
+  .main-footer {
+    margin-top: 50px;
+    height: 100px;
+  }
+  
+  .footer-navigation {
+    float: right;
+    font-size: 16px;
+  }
+  
+  .footer-navigation > ul {
+    list-style: none;
+  }
+  
+  .footer-navigation > ul > li {
+    display: left;  
+  }
+  
+  .footer-navigation > ul li a {
+    font-weight: bold;
+    opacity: 0.5;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-navigation > ul li a:hover,
+  .footer-navigation > ul li a:focus {
+    cursor: pointer;
+    color: black;
+    opacity: 1;
+  }
+  
+  .footer-navigation > ul > li .active {
+    color:black;
+    opacity: 1;
+  }
+
+
+	
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+h4{
+    text-align: center;
+}
+
+.accordion{
+    width: 800px;
+    margin: 90px auto;
+    color: #999;
+    background-color: white;
+    padding: 45px 45px;
+}
+
+.accordion .container{
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordion .label{
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #000;
+    cursor: pointer;
+}
+
+.accordion .label::before{
+    content: '+';
+    position: absolute;
+    color: #000;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 700px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+.accordion hr{
+    width: 100%;
+    margin-left: 0;
+    border: 1px solid #999;
+}
+
+.accordion .container.active .content{
+    height: 150px;
+}
+
+.accordion .container.active .label::before{
+    content: '-';
+    font-size: 30px;
+}
